@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="43dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="出發地："
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:id="@+id/TVfrom" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date|datetime"
+            android:id="@+id/from"
+            android:layout_weight="0.7" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="43dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="目的地："
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:id="@+id/TVto" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date|datetime"
+            android:id="@+id/to"
+            android:layout_weight="0.7" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="選擇日期"
+            android:textSize="18sp"
+            android:layout_weight="0.13"
+            android:id="@+id/TVdate"
+            android:layout_marginLeft="50dp"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.13"
+            android:text="選擇時間"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:id="@+id/TVtime" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="徵乘客數："
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:id="@+id/TVpeople" />
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:layout_weight=".2"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center"
+            android:visibility="visible" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="徵求性別："
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:id="@+id/TVgender" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男"
+                android:id="@+id/radioButton4"
+                android:layout_gravity="right"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女"
+                android:id="@+id/radioButton3"
+                android:checked="false"
+                android:layout_marginLeft="10dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不拘"
+                android:id="@+id/radioButton5"
+                android:checked="false"
+                android:layout_marginLeft="10dp" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+</LinearLayout>
+

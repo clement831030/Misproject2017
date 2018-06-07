@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@mipmap/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mLoginForm" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:id="@+id/mLoginForm"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+
+        <ImageButton
+            android:background="#00000000"
+            android:layout_width="65dip"
+            android:layout_height="match_parent"
+            android:id="@+id/profile"
+            android:adjustViewBounds="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/profile" />
+
+        <ImageButton
+            android:background="#00000000"
+            android:layout_width="65dip"
+            android:layout_height="match_parent"
+            android:id="@+id/showposts"
+            android:adjustViewBounds="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@+id/history"
+            android:scaleType="fitCenter"
+            android:src="@drawable/showposts" />
+
+        <ImageButton
+            android:background="#00000000"
+            android:layout_width="65dip"
+            android:layout_height="match_parent"
+            android:id="@+id/history"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:layout_alignParentBottom="true"
+
+            android:scaleType="fitCenter"
+            android:src="@drawable/history"
+            android:onClick="onHistoryClick"/>
+
+        <ImageButton
+            android:background="#00000000"
+            android:layout_width="65dip"
+            android:layout_height="match_parent"
+            android:id="@+id/post"
+            android:adjustViewBounds="true"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/history"
+            android:layout_toEndOf="@+id/history"
+
+            android:scaleType="fitCenter"
+            android:src="@drawable/post" />
+
+        <ImageButton
+            android:background="#00000000"
+            android:layout_width="65dip"
+            android:layout_height="match_parent"
+            android:id="@+id/notification"
+            android:adjustViewBounds="true"
+            android:src="@drawable/notification"
+            android:scaleType="fitCenter"
+            android:layout_toRightOf="@+id/post"
+            android:layout_toEndOf="@+id/post" />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fragmentbackground">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="信箱 :"
+            android:id="@+id/TVstuid"
+            android:textSize="20sp"
+            android:textColor="#000000" />
+
+        <EditText
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/EDstuid"
+            android:textSize="18sp"
+            android:ems="10"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:maxLength="20"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\@cc.ncu.edu.tw"
+            android:id="@+id/TVccncuedutw"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密碼 :"
+            android:id="@+id/TVpassword"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/EDpassword"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名 :"
+            android:id="@+id/TVusername"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/EDusername"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="科系/單位 :"
+            android:id="@+id/TVuserdip"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/EDuserdip"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性別 :"
+            android:id="@+id/TVgender"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_marginTop="4dp" />
+
+        <RadioGroup
+            android:layout_width="157dp"
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:id="@+id/RadioGroup"
+            android:layout_marginTop="4dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女"
+                android:id="@+id/female"
+                android:checked="false"
+                android:textSize="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男"
+                android:id="@+id/male"
+                android:checked="false"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:id="@+id/back"
+            android:textSize="20dp"
+            android:layout_marginRight="40dp"
+            android:onClick="Back" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="送出"
+            android:id="@+id/send"
+            android:textSize="20dp"
+            android:onClick="signUp" />
+    </LinearLayout>
+</LinearLayout>

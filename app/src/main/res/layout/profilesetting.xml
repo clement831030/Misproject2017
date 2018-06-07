@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:foregroundGravity="center_vertical|center_horizontal">
+
+    <ImageView
+        android:src="@mipmap/logo5"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/UserPi"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/profilebox"
+        android:src="@drawable/profilebox"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/UserPi" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/Layout_Name"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/followNum_tv"
+        android:layout_alignStart="@+id/followNum_tv">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="系級："
+            android:id="@+id/Name_tv"
+            android:layout_alignTop="@+id/profilebox"
+            android:layout_alignLeft="@+id/followNum_tv"
+            android:layout_alignStart="@+id/followNum_tv"
+            android:textColor="#756464"
+            android:textSize="25dp"
+            android:textIsSelectable="false" />
+
+        <EditText
+            android:layout_width="215dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/Eddip"
+            android:layout_toRightOf="@+id/Name_tv"
+            android:layout_alignRight="@+id/radioGroup"
+            android:layout_alignEnd="@+id/radioGroup"
+            android:layout_alignTop="@+id/Name_tv"
+            android:layout_above="@+id/radioGroup"
+            android:textColor="#000000"
+            android:textSize="23dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/Layout_CarNum"
+        android:layout_below="@+id/Layout_Name"
+        android:layout_alignLeft="@+id/followNum_tv">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="車牌："
+            android:id="@+id/textView7"
+            android:layout_below="@+id/textView6"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_alignStart="@+id/textView6"
+            android:layout_marginTop="0dp"
+            android:textColor="#756464"
+            android:textSize="25dp" />
+
+        <EditText
+            android:layout_width="215dp"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:id="@+id/Edcarnum"
+            android:layout_alignLeft="@+id/Edphone"
+            android:layout_alignStart="@+id/Edphone"
+            android:layout_alignRight="@+id/Edphone"
+            android:layout_alignEnd="@+id/Edphone"
+            android:layout_alignBottom="@+id/textView7"
+            android:layout_below="@+id/textView6"
+            android:textSize="23dp"
+            android:textColor="#000000"
+            android:text="無" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/Layout_ID"
+        android:weightSum="1"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/Layout_CarNum"
+        android:layout_alignLeft="@+id/followNum_tv">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="姓名："
+            android:id="@+id/textView5"
+            android:textColor="#756464"
+            android:layout_below="@+id/textView4"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignStart="@+id/textView4"
+            android:textSize="25dp" />
+
+        <EditText
+            android:layout_width="215dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Edname"
+            android:layout_alignLeft="@+id/Edphone"
+            android:layout_alignStart="@+id/Edphone"
+            android:layout_alignRight="@+id/radioGroup"
+            android:layout_alignEnd="@+id/radioGroup"
+            android:textSize="23dp"
+            android:textColor="#000000"
+            android:layout_above="@+id/Edphone"
+            android:layout_alignTop="@+id/textView5"
+            android:layout_marginLeft="0dp"
+            android:inputType="text"
+            android:layout_weight="0.02" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/Layout_Gender"
+        android:layout_gravity="center"
+        android:gravity="top|bottom"
+        android:layout_alignLeft="@+id/followNum_tv"
+        android:layout_below="@+id/Layout_ID">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="性別："
+            android:id="@+id/textView4"
+            android:layout_below="@+id/Name_tv"
+            android:layout_alignLeft="@+id/Name_tv"
+            android:layout_alignStart="@+id/Name_tv"
+            android:layout_marginTop="0dp"
+            android:textColor="#756464"
+            android:gravity="center"
+            android:textSize="25dp" />
+
+        <EditText
+            android:layout_width="215dp"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:id="@+id/Edgender"
+            android:layout_alignTop="@+id/textView6"
+            android:layout_toRightOf="@+id/textView6"
+            android:layout_alignRight="@+id/Eddip"
+            android:layout_alignEnd="@+id/Eddip"
+            android:layout_above="@+id/Edcarnum"
+            android:textSize="23dp"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/followNum_tv"
+        android:textColor="#4a85de"
+        android:textSize="20sp"
+        android:layout_above="@+id/profilebox"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/finishEdit"
+        android:src="@drawable/success"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/Layout_CarNum"
+        android:layout_alignEnd="@+id/Layout_CarNum"
+        android:background="#ffffff"
+        android:onClick="onClickFinish" />
+
+</RelativeLayout>
